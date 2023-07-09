@@ -17,14 +17,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 3.5
+    - name: Set up Python 3.11.3
       uses: actions/setup-python@v2
       with:
-        python-version: 3.5
+        python-version: 3.11.3
     - name: setup env & install getproxy
       run: |
-        git config --global user.name "fate0"
-        git config --global user.email "git@fatezero.org"
+        git config --global user.name "roac2099"
+        git config --global user.email "br2099@gmail.com"
         pip install git+https://github.com/fate0/getproxy.git@master
 
     - name: run getproxy
